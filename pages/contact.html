@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<header id="header">
+		<div class="header__logo">
+			<img src="../assets/crossports.jpg" alt="Logo CrosSports">
+		</div>
+		<ul class="header__nav">
+			
+			<li class="list">
+				<a href="../index.html" class="links">Inicio</a>
+			</li>
+			<li class="list">
+				<a href="products.html" class="links">Productos</a>
+			</li>
+			<li class="list">
+				 <a href="contact.html" class="links">Contacto</a>
+			</li>
+			<li class="list">
+				<a href="sales.html" class="links">Centros de ventas</a>
+			</li>
+			<li class="list">
+				<a href="services.html" class="links">Carreras y Eventos</a>
+			</li>
+		</ul>
+	</header>
+	
+	<main class="main">
+		<form action="formulario.html" method="POST" enctype="multipart/form-data" class="main__form">
+			<p class="form__text">Completa el siguiente formulario y decinos cual es tu consulta.</p>			
+			<div class="form__name">
+				<input type="text" name="nombre" placeholder="Ingresa tu nombre..." class="form__name--first">
+				<input type="text" name="apellido" placeholder="Ingresa tu apellido..." class="form__name--surname">
+			</div>
+			<div class="form__info">
+				<input type="email" name="mail" placeholder="Ingresa tu email..." class="form__info--email"> 
+				<select class="form__info--reason">
+					<option value="general">Consulta general</option>
+					<option value="producto">Consulta de un producto</option>
+					<option value="x">Otro</option>
+				</select>
+			</div>
+			<textarea name="consulta" placeholder="Ingresa tu consulta" class="form__msg"></textarea>
+			<div class="form__buttons">
+				<input type="submit" name="enviar" value="Enviar" class="form__buttons--submit">
+				<input type="reset" name="limpiar" value="Restablecer" class="form__buttons--reset">
+			</div>
+		</form>
+	</main>
+	<footer id="footer"> 
+		<div class="footer__content">
+			<p>
+				Seguinos en nuestro <a href="https://www.instagram.com/crossports_carreras/" class="links">Instagram</a>
+			</p>  
+			<p class="footer__copy">
+				Faustino Cantón &#169; 2022
+			</p>
+		</div>
+		<div class="footer__logo">
+			<img src="../assets/crossports.jpg" alt="Logo CrosSports">
+		</div>	
+	</footer>
+</body>
+</html>
