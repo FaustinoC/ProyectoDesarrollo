@@ -233,27 +233,3 @@ body {
 .cardIcon {
     max-width: 150px;
 }
-/*BootStrap*/
-
-#banner {
-    position: relative;
-    background-image: url(../assets/dua-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 500px;
-    height: 50vh;
-}
-#banner span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgb(111, 104, 104), rgb(38, 36, 36));
-    opacity: .7;
-}
-#banner .text {
-    z-index: 1;
-}
-.cardIcon {
-    max-width: 150px;
-}
