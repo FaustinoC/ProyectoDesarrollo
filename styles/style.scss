@@ -39,10 +39,10 @@ body {
 .links {
     color: #000;
     text-decoration: none;
-}
-  .links:hover {
-    color: blue;
-    text-decoration: underline;
+    &:hover {
+        color: blue;
+        text-decoration: underline;
+    }
 }
 .main {
     padding: 12vh 2vw 2vh 2vw;
@@ -142,12 +142,12 @@ body {
     position: relative;
     width: 310px;
     height: 210px;
-}
-.table__img img {
-    width: auto;
-    height: auto;
-    max-width: 300px;
-    max-height: 200px;
+    img {
+        width: auto;
+        height: auto;
+        max-width: 300px;
+        max-height: 200px;
+    }
 }
 .content {
     position: relative;
@@ -219,17 +219,31 @@ body {
     background-position: center;
     min-height: 500px;
     height: 50vh;
-}
-#banner span {
+    span {
     position: absolute;
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgb(111, 104, 104), rgb(38, 36, 36));
     opacity: .7;
-}
-#banner .text {
-    z-index: 1;
+    }
+    .text {
+        z-index: 1;
+    }
 }
 .cardIcon {
     max-width: 150px;
+}
+.productItem {
+    transition: all 300ms;
+    img {
+        padding: 1rem;
+        border: 1px solid #ccc;
+    }
+    &:hover {
+        transform: scale(1.1);
+        img {
+            box-shadow: 0 0 10px 3px rgba(0,0,0,.3);
+        }
+    }
+
 }
