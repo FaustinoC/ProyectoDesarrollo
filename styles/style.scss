@@ -8,214 +8,14 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: map-get($fonts, light);
 }
-#header {
-    width: 100%; 
-    height: 10vh;
-    position: fixed;
-    background-color: lightblue;
-    border-bottom: solid;
-    font-size: 28px;
-    z-index: 1;
-}
-.header__logo {
-    margin: 1.5rem;
-    display: inline-block;
-}
-.header__nav {
-    display: inline;
-    position: absolute;
-    box-sizing: border-box;
-    width: 70%;
-    right: 1rem;
-    top: 1.5rem;
-}
-.list {
-    display: inline;
-    padding: 1px 5px;
-    margin-left: 16px;
-    border: solid;
-    border-bottom-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-.links {
-    color: #000;
+%links {
     text-decoration: none;
     &:hover {
-        color: blue;
         text-decoration: underline;
     }
 }
-.main {
-    padding: 12vh 2vw 2vh 2vw;
-    font-size: 20px;
-}
-.main__productos {
-    padding: 13vh 2vw 2vh 2vw;
-    height: 100vh;
-}
-.main__table {
-    width: 100%;
-    padding: 5% 10%;
-}
-.main__ventas {
+%bgBanner {
     position: relative;
-    padding: 13vh 2vw 2vh 2vw;
-    height: 100vh;
-}
-.main__ventas--text {
-    position: absolute;
-    top: 5vh;
-    left: 35%;
-}
-.main__ol {
-    position: absolute;
-    top: 10vh;
-    left: 37%;
-}
-.main__ol li {
-    padding: 2rem 1rem;
-}
-.main__form {
-    position: relative;
-    width: 80%;
-    height: 50vh;
-    margin: 10vh 10% 35vh 10%;
-    background-color: lightblue;
-    border: solid;
-    border-radius: 50px;
-}
-.form__text {
-    text-align: center;
-    padding: 1rem;
-}
-@mixin forms($width, $height) {
-    margin: 0 27% 1rem 27%;
-    width: $width;
-    height: $height;
-}
-%formBoxes {
-    width: 260px;
-    height: 40px;
-}
-.form__name {
-    @include forms(80%, auto)
-}
-.form__name--first {
-    @extend %formBoxes
-}
-.form__name--surname {
-    @extend %formBoxes
-}
-.form__info {
-    @include forms(80%, auto)
-}
-.form__info--email{
-    @extend %formBoxes
-}
-.form__info--reason {
-    width: 265px;
-    height: 45px;
-}
-.form__msg {
-    @include forms(533px, 100px)
-}
-.form__buttons {
-    @include forms(80%, auto)
-}
-%formButtons {
-    width: 130px;
-    height: 20px;
-}
-.form__buttons--submit {
-    @extend %formButtons
-}
-.form__buttons--reset {
-    @extend %formButtons
-}
-.table__head {
-    text-align: center;
-    border: solid;
-}
-.table__content {
-    text-align: center;
-}
-.table__img {
-    position: relative;
-    width: 310px;
-    height: 210px;
-    img {
-        width: auto;
-        height: auto;
-        max-width: 300px;
-        max-height: 200px;
-    }
-}
-.content {
-    position: relative;
-    height: 145vh;
-}
-.content__text {
-    display: inline-block;
-    box-sizing:border-box;
-    width: 50%;
-    text-align: left;
-}
-.content__img {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.content--secondary {
-    position: relative;
-    width: 100%;
-    height: 75vh;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),url(../assets/dua-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.content__text--secondary {
-    position: absolute;
-    box-sizing: border-box;
-    background-color: #525E75;
-    padding: 1rem;
-    top: 20%;
-    left: 25%;
-    width: 50%;
-    text-align: center;
-    color: #fff;
-}
-.content__servicios {
-    height: 100vh;
-    padding: 10% 30%;
-}
-#footer {
-    position: relative;
-    width: 100%;
-    height: 10vh; 
-    font-size: 16px;
-    font-weight: map-get($fonts, medium);   
-    background-color: lightblue;
-    border-top: solid;
-}
-.footer__logo {
-    display: inline-block;
-    position: absolute;
-    right: 3rem;
-    top: 30%;
-}
-.footer__content {
-    padding: 16px 3rem 0 3rem;
-}.footer__copy {
-    color: #525E75;
-    font-size: 20px;
-}
-
-/*BootStrap*/
-
-#banner {
-    position: relative;
-    background-image: url(../assets/dua-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -232,6 +32,17 @@ body {
         z-index: 1;
     }
 }
+#banner {
+    background-image: url(../assets/dua-2.jpg);
+    &__sales {
+        background-image: url(../assets/dua-3.jpg);
+        @extend %bgBanner
+    }
+    @extend %bgBanner
+}
+.gMaps {
+    @extend %links
+}
 .cardIcon {
     max-width: 150px;
 }
@@ -247,5 +58,11 @@ body {
             box-shadow: 0 0 10px 3px rgba(0,0,0,.3);
         }
     }
-
+}
+#floatingTextarea {
+    min-height: 100px;
+}
+.videoYT {
+    min-width: 280px;
+    min-height: 160px;
 }

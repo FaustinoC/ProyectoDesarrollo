@@ -1,55 +1,92 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centros de ventas</title>
-	<link rel="stylesheet" type="text/css" href="../styles/style.css">
-</head>
-<body>
-	<header id="header">
-		<div class="header__logo">
-			<img src="../assets/crossports.jpg" alt="Logo CrosSports">
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Centros de Venta</title>
+		<link 
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+			rel="stylesheet" 
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+			crossorigin="anonymous"
+		>
+		<link rel="stylesheet" href="../styles/style.css">
+	</head>
+	<body>
+		<header id="header__bs" class="bg-dark">
+			<div class="container-md bg-dark">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<div class="container-fluid">
+				  		<h1 class="navbar-brand fs-1">CrosSports</h1>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./products.html">Productos</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Más
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li><a class="dropdown-item" href="./contact.html">Contacto</a></li>
+										<li><a class="dropdown-item" href="./sales.html">Centros de Venta</a></li>
+										<li><a class="dropdown-item" href="./services.html">Carreras y Eventos</a></li>
+									</ul>
+					  			</li>
+							</ul>
+				  		</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div id="banner__sales" class="d-flex align-items-center">
+			<span></span>
+			<div class="col-md-9 mx-auto text text-white text-center">
+				<h2 class="fw-bold mb-3">
+					Visita nuestros Centros de Venta, ubicados en:
+			  	</h2>
+			  	<p>
+					<a 
+						href="https://www.google.com.ar/maps/place/Galer%C3%ADas+Pac%C3%ADfico/@-34.5988191,-58.3754511,16z/data=!4m5!3m4!1s0x95bccacb0b1afcaf:0x8d53a5cf4f399e9c!8m2!3d-34.5992496!4d-58.3747789" 
+						class="text-white fs-4 gMaps">
+						Galerías Pacífico
+					</a>
+				</p>
+				<p>
+					<a 
+						href="https://www.google.com.ar/maps/place/Tecatlon/@-34.5992914,-58.3923947,18z/data=!3m1!4b1!4m5!3m4!1s0x95bccb28abd08ca1:0x98d1b7bb104e9e29!8m2!3d-34.599293!4d-58.3914978" 
+						class="text-white fs-4 gMaps">
+						Tecatlon
+					</a>
+				</p>
+			</div>
 		</div>
-		<ul class="header__nav">
-			<li class="list">
-				<a href="../index.html" class="links">Inicio</a>
-			</li>
-			<li class="list">
-				<a href="products.html" class="links">Productos</a>
-			</li>
-			<li class="list">
-				 <a href="contact.html" class="links">Contacto</a>
-			</li>
-			<li class="list">
-				<a href="sales.html" class="links">Centros de ventas</a>
-			</li>
-			<li class="list">
-				<a href="services.html" class="links">Carreras y Eventos</a>
-			</li>
-		</ul>
-	</header>
-    <main class="main">
-		<div class="main__ventas">
-			<p class="main__ventas--text">Visita nuestros centros de ventas. Ubicados en:</p>
-        	<ol class="main__ol">
-            	<li><a href="https://www.google.com.ar/maps/place/Galer%C3%ADas+Pac%C3%ADfico/@-34.5988191,-58.3754511,16z/data=!4m5!3m4!1s0x95bccacb0b1afcaf:0x8d53a5cf4f399e9c!8m2!3d-34.5992496!4d-58.3747789" class="links">Galerías Pacífico</a></li>
-            	<li><a href="https://www.google.com.ar/maps/place/Tecatlon/@-34.5992914,-58.3923947,18z/data=!3m1!4b1!4m5!3m4!1s0x95bccb28abd08ca1:0x98d1b7bb104e9e29!8m2!3d-34.599293!4d-58.3914978" class="links">Tecatlon</a></li>
-        	</ol>
+		<div class="container">
+			<footer class="py-3">
+			  	<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+					<li class="nav-item">
+						<a href="./contact.html" class="nav-link px2 text-muted">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a href="./sales.html" class="nav-link px2 text-muted">Centros de Venta</a>
+					</li>
+					<li class="nav-item">
+						<a href="./services.html" class="nav-link px2 text-muted">Carreras y Eventos</a>
+					</li>
+			  	</ul>
+			  	<p class="text-center text-muted">&#169; 2022 CrosSports</p>
+			</footer>
 		</div>
-    </main>
-    <footer id="footer"> 
-		<div class="footer__content">
-			<p>
-				Seguinos en nuestro <a href="https://www.instagram.com/crossports_carreras/" class="links">Instagram</a>
-			</p>  
-			<p class="footer__copy">
-				Faustino Cantón &#169; 2022
-			</p>
-		</div>
-		<div class="footer__logo">
-			<img src="../assets/crossports.jpg" alt="Logo CrosSports">
-		</div>	
-	</footer>
-</body>
+		<script 
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+			crossorigin="anonymous">
+		</script>
+	</body>
 </html>
