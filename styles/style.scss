@@ -59,6 +59,15 @@ body {
         }
     }
 }
+.imgItem {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+.productText {
+    color: #000;
+    @extend %links
+}
 #floatingTextarea {
     min-height: 100px;
 }
